@@ -37,7 +37,6 @@ function Logar() {
     if (Nome !== "" && Email !== "" && Senha !== "") {
         for (var x = 0; x < Banco.length; x++) {
             var objeto = Banco[x]
-            console.log(Banco)
             if (objeto.nome == Nome && objeto.email == Email && objeto.senha == Senha) {
                 alert("Voce Logou")
                 document.getElementById("NomeL").value = ""
@@ -51,6 +50,9 @@ function Logar() {
                 document.getElementById("SenhaL").value = ""
             }
         }
+    }
+    else {
+        alert("Login vazio")
     }
 
 }
